@@ -1,8 +1,7 @@
 # Running Server
 For running application there are 2 option:
-    1. for running locally, just run 
-        ```python3 wsgi.py```
-    2. for running by anywhere ip just run
+1. for running locally, just run ```python3 wsgi.py```
+2.  for running by anywhere ip just run
         ```./start_gunicorn.sh```, you could adjust the worker that should be used by change ```-w worker_number```
         where worker_number is number of worker
 
