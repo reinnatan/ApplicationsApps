@@ -6,7 +6,7 @@ For running application there are 2 option:
         where worker_number is number of worker
 
 # Generate Database 
-if you want to generate database and all the tables just execute 
+if you want to generate new database and all the tables just execute 
 ```make migration_db```, currently the applications use local database
 
 # Collection Postman
