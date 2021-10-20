@@ -1,0 +1,313 @@
+{
+	"info": {
+		"_postman_id": "5fdca677-8909-4649-8324-7cd7c72c4b97",
+		"name": "Kalibrr",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Applicant",
+			"item": [
+				{
+					"name": "Sign Up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"name\": \"reinhart\",\n    \"email\": \"rei@test.com\",\n    \"password\": \"rei12345\",\n    \"address\": \"Jln. Nyiur Melambai No. 22\",\n    \"phone\": \"08123123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/v1/applicants/sign-up",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"v1",
+								"applicants",
+								"sign-up"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"rei@test.com\",\n    \"password\":\"rei12345\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/v1/applicants/login",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"v1",
+								"applicants",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Jobs Detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/v1/applicants/jobs-detail/1",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"v1",
+								"applicants",
+								"jobs-detail",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Jobs Detail Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n    \"jobsId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/v1/applicants/apply-applications/1",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"v1",
+								"applicants",
+								"apply-applications",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "Sign Up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"PT Vox Media\",\n    \"email\":\"test@voxmedia.id\"\n    \"password\":\"vox123\",\n    \"description\": \"IT Consultant and Networking\",\n    \"address\": \"Jln. Kintamani No. 22\",\n    \"websiteUrl\": \"htp://voxmedia.com\",\n    \"isActive\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/v1/company/sign-up",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"v1",
+								"company",
+								"sign-up"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"PT Vox Media\",\n    \"email\":\"test@voxmedia.id\",\n    \"password\":\"vox123\",\n    \"description\": \"IT Consultant and Networking\",\n    \"address\": \"Jln. Kintamani No. 22\",\n    \"websiteUrl\": \"htp://voxmedia.com\",\n    \"isActive\": true\n}{\n    \"name\": \"PT Vox Media\",\n    \"email\":\"test@voxmedia.id\",\n    \"password\":\"vox123\",\n    \"description\": \"IT Consultant and Networking\",\n    \"address\": \"Jln. Kintamani No. 22\",\n    \"websiteUrl\": \"htp://voxmedia.com\",\n    \"isActive\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/v1/company/login",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"v1",
+								"company",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Profile",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"PT Volix Media\",\n    \"email\":\"coba@voxmedia.id\",\n    \"password\":\"vox123\",\n    \"description\": \"IT Consultant Computer\",\n    \"address\": \"Jln. Kintamani No. 22\",\n    \"websiteUrl\": \"htp://voxmedia.com\",\n    \"isActive\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/v1/company/edit-profile/1",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"v1",
+								"company",
+								"edit-profile",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Job",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-tokens",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJleHBpcmVkX3Rva2VuIjoiMjAyMS0xMC0yMCAyMzoyMzoyMC45ODMwMzciLCJsb2dpbl9hcyI6ImNvbXBhbnkifQ.PJfJOEOFY1kiLECa1_rsjLK0OcPYgSSrGcib0AbV80E",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"jobTitle\": \"Golang Developer\",\n        \"jobDesc\": \"Golang Developer for compannies\",\n        \"minQualifications\": \"Have Experience in Golang for 3 years\",\n        \"jobLevel\": \"Experience Employee\",\n        \"countVacancy\":2,   \n        \"jobCategory\": \"IT\",\n        \"eduRequired\": \"Bachelor IT/Information System\",\n        \"companyId\": 1\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/v1/company/create-job",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"v1",
+								"company",
+								"create-job"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Job",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-access-tokens",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJleHBpcmVkX3Rva2VuIjoiMjAyMS0xMC0yMCAyMzoyMzoyMC45ODMwMzciLCJsb2dpbl9hcyI6ImNvbXBhbnkifQ.PJfJOEOFY1kiLECa1_rsjLK0OcPYgSSrGcib0AbV80E",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"jobTitle\": \"Java Developer\",\n        \"jobDesc\": \"Create and custom Java applications\",\n        \"minQualifications\": \"Have Experience in Java for 5 years\",\n        \"jobLevel\": \"Experience Employee\",\n        \"countVacancy\":1,   \n        \"jobCategory\": \"IT\",\n        \"eduRequired\": \"Bachelor IT/Information System\",\n        \"companyId\": 1\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/v1/company/edit-job/1",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"v1",
+								"company",
+								"edit-job",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Jobs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-tokens",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJleHBpcmVkX3Rva2VuIjoiMjAyMS0xMC0yMCAyMzozOTowNC44MTE3MzMiLCJsb2dpbl9hcyI6ImFwcGxpY2FudCJ9.EI7ImQVPvCEx2YZpVykO9emMpS8kVl5gNe1tCTm7x3I",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/v1/company/list-jobs",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"v1",
+								"company",
+								"list-jobs"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
