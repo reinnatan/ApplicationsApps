@@ -29,6 +29,8 @@ def token_required(f):
             if difference.total_seconds()/60 > 0:
                 if jwt_decode['login_as'] == 'company':
                     current_user = Companies.find(int(jwt_decode['id']))
+                    if current_user.token != token:
+                        return jsonify({'message': 'token is invalid'})
                 else:
                     return jsonify({'message': "you don't have authorization for this features"})
             else:
