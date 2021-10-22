@@ -32,7 +32,7 @@ def token_required(f):
                 else:
                     return jsonify({'message': "you don't have authorization for this features"})
             else:
-                return jsonify({'message': 'token is invalid'})
+                return jsonify({'message': 'expired token'})
 
         except Exception as e:
             return jsonify({'message': str(e)})
