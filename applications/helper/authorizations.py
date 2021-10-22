@@ -3,9 +3,7 @@ from datetime import datetime
 import jwt
 from flask import request, jsonify
 from six import wraps
-
 from application import app
-from applications.applicant.v1.models.applicants import Applicants
 from applications.company.v1.model.companies import Companies
 
 
