@@ -2,7 +2,7 @@
   - Python3
   - Gunicorn
   - Flask
-  - pyjwt
+  - Pyjwt
   - Flask-Orator
 # Running Server
 For running application there are 2 option:
