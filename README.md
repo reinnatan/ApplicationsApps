@@ -1,3 +1,9 @@
+# Tech Stacks
+  - Python3
+  - Gunicorn
+  - Flask
+  - pyjwt
+  - Flask-Orator
 # Running Server
 For running application there are 2 option:
 1. for running server locally, just run ```python3 wsgi.py```
